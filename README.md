@@ -91,3 +91,35 @@ const chalk = require("chalk");
 
 console.log(chalk.blue("Hello world!"));
 ```
+
+ora
+文档地址：https://www.npmjs.com/package/ora
+说明：loading 效果
+使用方式：
+
+```js
+const ora = require("ora");
+
+const spinner = ora("Loading unicorns").start();
+
+setTimeout(() => {
+  spinner.color = "yellow";
+  spinner.text = "Loading rainbows";
+}, 1000);
+```
+
+download-git-repo
+文档地址：https://www.npmjs.com/package/download-git-repo
+说明：仓库下载
+使用方式：
+
+```js
+download(
+  "bitbucket:flippidippi/download-git-repo-fixture#my-branch",
+  "test/tmp",
+  { clone: true },
+  function (err) {
+    console.log(err ? "Error" : "Success");
+  }
+);
+```
