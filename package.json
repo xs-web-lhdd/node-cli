@@ -1,0 +1,11 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "one cli for package",
+  "main": "index.js",
+  "author": "凉风有信、",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^8.1.0"
+  }
+}
